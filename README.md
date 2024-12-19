@@ -1,4 +1,4 @@
-# Challenge Portfólio ONE
+# Praticando Front End: Challenge Portfólio
 
 Este projeto faz parte do programa Oracle Next Education (ONE). Trata-se de um portfólio bem estruturado e com links externos funcionais.
 
