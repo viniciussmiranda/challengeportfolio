@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--cortexto);
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --cortexto: #464646;
+    --corsecundaria: #EAF2FD;
+}
+
+body {
+    background: var(--preto-05, #F5F5F5);;
+    width: 1440px;
+    height: 5020px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.cabecalho {
+    display: flex;
+    width: 1136px;
+    padding: 32px 0px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nome {
+    margin: 0;
+    padding-left: 5px; 
+}
+
+
+.links {
+    display: flex;
+    gap: 15px;
+    margin-left: auto; 
+}
+
+.email {
+    margin-left: auto; 
+    font-weight: bold;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin: 50px auto;
+    max-width: 1136px;
+}
+
+
+.perfil-img {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 368px;
+    background: url(/assets/eu.jpg) lightgray 50% / cover no-repeat;
+    order: 2;
+}
+
+.textos{
+    display: block;
+}
+
+.texto-apresentacao {
+    max-width: 600px;
+    order: 1;
+}
+
+.texto-apresentacao h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #464646;
+    margin-bottom: 16px;
+    order: 1;
+}
+
+.texto-apresentacao p {
+    font-size: 18px;
+    color: #464646;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    order: 1;
+}
+
+.links {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.links a {
+
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+    color: var(--cortexto);
+    text-decoration: none;
+}
+
+.sobremim {
+    display: flex;
+    flex-direction: column; 
+    align-items: left; 
+    gap: 16px; 
+    background: var(--corsecundaria);
+    width: 100%;
+}
+
+.sobremim p {
+    width: 751px;
+}
+
+.sobremim img {
+    width: 150px;
+    height: 80px;
+    margin: 5px;
+    margin-left: 10%;
+}
+
+.textoss {
+    margin-top: 1%;
+    margin-left: 10%;
+    display: block;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px; 
+    align-self: stretch;
+}
+
+.skills h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    width: 90%; 
+    justify-items: center;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 150px; 
+    text-align: center;
+    gap: 8px;
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cortexto);
+    margin: 0;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.hobbies h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    width: 90%;
+    justify-items: center;
+}
+
+.hobby-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    gap: 8px;
+}
+
+.hobby-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.hobby-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cortexto);
+    margin: 0;
+}
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+    background-color: var(--corsecundaria);
+    width: 100%;
+}
+
+.formacao h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cortexto);
+}
+
+.formacao-container {
+    display: flex; 
+    gap: 10px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.formacao-card {
+    margin: 50px; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.formacao-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+
+
+.formacao-card img {
+    margin-bottom: 8px;
+}
+
+.formacao-card p {
+    margin: 4px 0;
+}
+
+.formacao-card .curso {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cortexto);
+    margin-bottom: 8px;
+}
+
+.formacao-card .instituicao {
+    font-size: 14px;
+    color: var(--cortexto);
+    font-weight: 400;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    width: 100%;
+}
+
+.projetos h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cortexto);
+    margin-bottom: 32px;
+}
+
+.projeto-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1136px;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.projeto-imagem {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.projeto-detalhes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+}
+
+.projeto-detalhes h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cortexto);
+}
+
+.projeto-detalhes p {
+    font-size: 16px;
+    color: var(--cortexto);
+}
+
+.projeto-botoes {
+    display: flex;
+    gap: 16px;
+}
+
+.botao {
+    padding: 8px 16px;
+    background-color: white;
+    outline: #2A7AE4 1px solid;
+    color: #2A7AE4;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #2a7be400;
+}
+
+.botao-demo {
+    background-color: #2A7AE4;
+    color: white;
+}
+
+.botao-demo:hover {
+    background-color: #ffffff00;
+}
+
+.contato {
+    width: 100%; 
+    background-color: #EAF2FD;
+    padding: 40px 0; 
+}
+
+.contato-content {
+    max-width: 1136px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px; 
+}
+
+.contato h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #464646;
+    margin-bottom: 16px;
+}
+
+.contato p {
+    font-size: 16px;
+    color: #464646;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.contato-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-imagem {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contato-texto {
+    order: 2;
+}
+
+.contato-texto h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #464646;
+    margin-bottom: 16px;
+    display: block;
+    order: 2;
+
+}
+
+.contato-texto p {
+    font-size: 16px;
+    color: #464646;
+    line-height: 1.5;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.contato-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #464646;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contato-form button {
+    padding: 10px 20px;
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.rodape{
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center;
+    color: var(--cortexto);
+    background-color: #fff; 
+    font-size: 10px; 
+    gap: 5px;
+    padding: 10px 0; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rodape p{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.rodape {
+    margin-top: auto; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Responsividade geral */
+@media (max-width: 1200px) {
+    .cabecalho {
+        flex-wrap: wrap; /* Permite quebrar os itens para linhas novas */
+        justify-content: space-between;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .perfil-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sobremim p {
+        width: 90%; /* Reduz a largura para caber melhor */
+    }
+}
+
+@media (max-width: 992px) {
+    .skills-container, .hobbies-container, .formacao-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .projeto-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projeto-imagem {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .formacao-card {
+        width: 200px; /* Ajusta o tamanho dos cards */
+    }
+
+    .contato-container {
+        grid-template-columns: 1fr; /* Cada elemento ocupa uma linha */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%; /* Remove largura fixa */
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .apresentacao {
+        gap: 16px;
+    }
+
+    .sobremim, .formacao, .contato {
+        padding: 16px;
+    }
+
+    .formacao-card, .hobby-card, .skill-card {
+        width: 100%; /* Cards ocupam toda a largura disponível */
+    }
+}
+
+@media (max-width: 576px) {
+    .apresentacao {
+        text-align: center;
+        gap: 16px;
+    }
+
+    .perfil-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sobremim img {
+        margin-left: 0;
+    }
+
+    .rodape {
+        font-size: 12px;
+    }
+}
